@@ -7,10 +7,6 @@
 
      <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-     <a-assets>
-         <video crossorigin="anonymous" id="videoID" autoplay loop="false" type="video/mp4" preload="auto" src="IFVPDay1.MOV">  
-     </a-assets>
-
      <a-marker vidhandler preset="custom" type="pattern" url="IFVP.patt" smooth="true">
      <a-video src="#videoID" position="0 0 0" rotation="-90 0 0" width="4" height="3"></a-video>
      </a-marker>
@@ -31,12 +27,6 @@
     <a-image id="test" src="Agenda.jpg" position="0 0 0" rotation="-90 0 0" width="4" height="6" opacity="1" transparent="true" alpha-test="0.2" shader="standard" scale="1 1 1" visible="" material="" geometry=""></a-image>
     </a-marker>
  
-     <script>
-       window.addEventListener('click', function () {
-       var v = document.querySelector('#videoID');
-       v.play();
-       });
-     </script>
 
         
    </body>
